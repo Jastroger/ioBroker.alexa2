@@ -1084,7 +1084,7 @@ function createSmarthomeStates(callback) {
                                     return;
                                 }
                                 let delay = 300000;
-                                if (!applianceId.startsWith('SKILL_')) delay = 60000;
+                                if (!applianceId.startsWith('SKILL_')) delay = 5000;
                                 shQueryBlocker[applianceId] = setTimeout(() => {
                                     shQueryBlocker[applianceId] = null;
                                 }, delay);
