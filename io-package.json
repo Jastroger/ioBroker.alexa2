@@ -2,7 +2,7 @@
     "common": {
         "name": "alexa2",
         "version": "2.0.0",
-        "title": "Alexa2 (Amazon Echo)",
+        "title": "Alexa2 (Amazon Echo) JastroVersion",
         "desc": "Remote control for Alexa (Amazon Echo)",
         "platform": "Javascript/Node.js",
         "news": {
