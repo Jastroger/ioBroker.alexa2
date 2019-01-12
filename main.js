@@ -550,6 +550,7 @@ function queryAllSmartHomeDevices(initial, callback) {
             if (!initial) {
                 let delay = 5000;
                 if (!applianceId.startsWith('SKILL_')) delay = 5000;
+				if(!applianceId.startsWith('AAA_Sonar')) delay = 1000;
                 shQueryBlocker[applianceId] = setTimeout(() => {
                     shQueryBlocker[applianceId] = null;
                 }, delay);
