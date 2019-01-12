@@ -548,7 +548,7 @@ function queryAllSmartHomeDevices(initial, callback) {
             }
             reqArr.push(applianceId);
             if (!initial) {
-                let delay = 5000;
+                let delay = 1000;
                 if (!applianceId.startsWith('SKILL_')) delay = 1000;
 				shQueryBlocker[applianceId] = setTimeout(() => {
                     shQueryBlocker[applianceId] = null;
