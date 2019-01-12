@@ -1080,7 +1080,7 @@ function createSmarthomeStates(callback) {
                             readableCounter++;
                             setOrUpdateObject('Smart-Home-Devices.' + shDevice.entityId + '.#query', {common: {type: 'boolean', read: false, write: true, role: 'button'}}, false, function (applianceId, value) {
                                 if (shQueryBlocker[applianceId]) {
-                                    adapter.log.warn('Smart Home device requestx blocked for ' + applianceId);
+                                    adapter.log.warn('Smart Home device request blocked for ' + applianceId);
                                     return;
                                 }
                                 let delay = 300000;
